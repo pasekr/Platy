@@ -1,0 +1,413 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FCDDB7AF-166D-4D08-9485-57775B6B213B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Platy.My.MyApplication</StartupObject>
+    <RootNamespace>Platy</RootNamespace>
+    <AssemblyName>Platy</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <HockeyAppResourceId>3c852cdb387d4c27a11572a25cb90d2d</HockeyAppResourceId>
+    <PublishUrl>S:\Platy.NET\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ProductName>Personální kancelář</ProductName>
+    <PublisherName>Resk a.s.</PublisherName>
+    <WebPage>publish.htm</WebPage>
+    <AutorunEnabled>true</AutorunEnabled>
+    <ApplicationRevision>5</ApplicationRevision>
+    <ApplicationVersion>1.0.0.5</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Platy.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Platy.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>060324AD2DAB74C2BC0053874CDB182ABFB016D3</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Platy_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="adodb, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Design, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DS_ciselnik_DruhPracDoba.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_ciselnik_DruhPracDoba.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS_ciselnik_DruhPracRezim.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_ciselnik_DruhPracRezim.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS_ciselnik_Duchody.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_ciselnik_Duchody.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS_ciselnik_PPV.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_ciselnik_PPV.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS_ciselnik_TypLhuty.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_ciselnik_TypLhuty.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS_ciselnik_TypPraxe.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_ciselnik_TypPraxe.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS_ciselnik_VzdDosa.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_ciselnik_VzdDosa.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS_ciselnik_ZdrPoj.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_ciselnik_ZdrPoj.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS_lhuty.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_lhuty.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS_pers.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_pers.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Hlavni.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hlavni.Designer.vb">
+      <DependentUpon>Hlavni.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="DS_praxe.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_praxe.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS_skola.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_skola.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS_uvazky.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_uvazky.xsd</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Hlavni.cs-CZ.resx">
+      <DependentUpon>Hlavni.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hlavni.resx">
+      <DependentUpon>Hlavni.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DS_ciselnik_DruhPracDoba.xsc">
+      <DependentUpon>DS_ciselnik_DruhPracDoba.xsd</DependentUpon>
+    </None>
+    <None Include="DS_ciselnik_DruhPracDoba.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_ciselnik_DruhPracDoba.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DS_ciselnik_DruhPracDoba.xss">
+      <DependentUpon>DS_ciselnik_DruhPracDoba.xsd</DependentUpon>
+    </None>
+    <None Include="DS_ciselnik_DruhPracRezim.xsc">
+      <DependentUpon>DS_ciselnik_DruhPracRezim.xsd</DependentUpon>
+    </None>
+    <None Include="DS_ciselnik_DruhPracRezim.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_ciselnik_DruhPracRezim.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DS_ciselnik_DruhPracRezim.xss">
+      <DependentUpon>DS_ciselnik_DruhPracRezim.xsd</DependentUpon>
+    </None>
+    <None Include="DS_ciselnik_Duchody.xsc">
+      <DependentUpon>DS_ciselnik_Duchody.xsd</DependentUpon>
+    </None>
+    <None Include="DS_ciselnik_Duchody.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_ciselnik_Duchody.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DS_ciselnik_Duchody.xss">
+      <DependentUpon>DS_ciselnik_Duchody.xsd</DependentUpon>
+    </None>
+    <None Include="DS_ciselnik_PPV.xsc">
+      <DependentUpon>DS_ciselnik_PPV.xsd</DependentUpon>
+    </None>
+    <None Include="DS_ciselnik_PPV.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_ciselnik_PPV.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DS_ciselnik_PPV.xss">
+      <DependentUpon>DS_ciselnik_PPV.xsd</DependentUpon>
+    </None>
+    <None Include="DS_ciselnik_TypLhuty.xsc">
+      <DependentUpon>DS_ciselnik_TypLhuty.xsd</DependentUpon>
+    </None>
+    <None Include="DS_ciselnik_TypLhuty.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_ciselnik_TypLhuty.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DS_ciselnik_TypLhuty.xss">
+      <DependentUpon>DS_ciselnik_TypLhuty.xsd</DependentUpon>
+    </None>
+    <None Include="DS_ciselnik_TypPraxe.xsc">
+      <DependentUpon>DS_ciselnik_TypPraxe.xsd</DependentUpon>
+    </None>
+    <None Include="DS_ciselnik_TypPraxe.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_ciselnik_TypPraxe.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DS_ciselnik_TypPraxe.xss">
+      <DependentUpon>DS_ciselnik_TypPraxe.xsd</DependentUpon>
+    </None>
+    <None Include="DS_ciselnik_VzdDosa.xsc">
+      <DependentUpon>DS_ciselnik_VzdDosa.xsd</DependentUpon>
+    </None>
+    <None Include="DS_ciselnik_VzdDosa.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_ciselnik_VzdDosa.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DS_ciselnik_VzdDosa.xss">
+      <DependentUpon>DS_ciselnik_VzdDosa.xsd</DependentUpon>
+    </None>
+    <None Include="DS_ciselnik_ZdrPoj.xsc">
+      <DependentUpon>DS_ciselnik_ZdrPoj.xsd</DependentUpon>
+    </None>
+    <None Include="DS_ciselnik_ZdrPoj.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_ciselnik_ZdrPoj.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DS_ciselnik_ZdrPoj.xss">
+      <DependentUpon>DS_ciselnik_ZdrPoj.xsd</DependentUpon>
+    </None>
+    <None Include="DS_lhuty.xsc">
+      <DependentUpon>DS_lhuty.xsd</DependentUpon>
+    </None>
+    <None Include="DS_lhuty.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_lhuty.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DS_lhuty.xss">
+      <DependentUpon>DS_lhuty.xsd</DependentUpon>
+    </None>
+    <None Include="DS_pers.xsc">
+      <DependentUpon>DS_pers.xsd</DependentUpon>
+    </None>
+    <None Include="DS_pers.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_pers.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DS_pers.xss">
+      <DependentUpon>DS_pers.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DS_praxe.xsc">
+      <DependentUpon>DS_praxe.xsd</DependentUpon>
+    </None>
+    <None Include="DS_praxe.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_praxe.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DS_praxe.xss">
+      <DependentUpon>DS_praxe.xsd</DependentUpon>
+    </None>
+    <None Include="DS_skola.xsc">
+      <DependentUpon>DS_skola.xsd</DependentUpon>
+    </None>
+    <None Include="DS_skola.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_skola.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DS_skola.xss">
+      <DependentUpon>DS_skola.xsd</DependentUpon>
+    </None>
+    <None Include="DS_uvazky.xsc">
+      <DependentUpon>DS_uvazky.xsd</DependentUpon>
+    </None>
+    <None Include="DS_uvazky.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_uvazky.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DS_uvazky.xss">
+      <DependentUpon>DS_uvazky.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Platy_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="My Project\DataSources\" />
+    <Folder Include="Resources\" />
+    <Folder Include="Sestavy\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
